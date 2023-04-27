@@ -1,0 +1,73 @@
+.readyContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #6b39fd, #576ef2, #30d8d9);
+    position: relative;
+}
+#readyParticles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ready{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    row-gap: 100px;
+    padding: 100px 0px;
+    align-items: center;
+}
+.readyContent{
+    display: flex;
+    column-gap: 130px;
+    justify-content: center;
+}
+.readyLogo{
+    width: 300px;
+}
+.readyText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.readyAction{
+    margin-top: 50px;
+}
+.readyInfo{
+    font-size: 12px;
+    margin-top: 5px;
+    color: white;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .ready{
+        width: 90%;
+    }
+    .readyContent{
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+    .readyText{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .ready{
+        width: 90%;
+    }
+    .readyContent{
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+    .readyText{
+        width: 90%;
+    }
+}

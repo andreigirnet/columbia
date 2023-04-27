@@ -1,0 +1,101 @@
+.problemsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.problems{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    row-gap: 50px;
+    padding: 100px 0px;
+    align-items: center;
+}
+.frustratedImg{
+    width: 600px;
+    height: 700px;
+}
+.arrow{
+    width: 35px;
+}
+.problemImageText{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
+}
+.problemList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.problemItem{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.textProblem{
+    font-size: 28px;
+    color: var(--textDark);
+    font-weight: 600;
+}
+.backgroundLogoRight{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 0.8;
+    transform: rotate(-10deg);
+}
+.problemMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+   .problems{
+       width: 90%;
+   }
+   .frustratedImg{
+       width: 300px;
+       height: 350px;
+   }
+   .problemImageText{
+       flex-direction: column;
+       align-items: center;
+       row-gap: 50px;
+   }
+    .problemList{
+        justify-content: center;
+        align-items: start;
+        row-gap: 20px;
+    }
+    .textProblem{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .problems{
+        width: 90%;
+        text-align: center;
+    }
+    .frustratedImg{
+        width: 300px;
+        height: 350px;
+    }
+    .problemImageText{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .problemList{
+        justify-content: center;
+        align-items: start;
+        row-gap: 20px;
+    }
+    .textProblem{
+        text-align: center;
+    }
+}

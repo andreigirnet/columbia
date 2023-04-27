@@ -1,0 +1,50 @@
+.tableContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.tableSection{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    row-gap: 100px;
+    padding: 100px 0px;
+    align-items: center;
+}
+.thead{
+    background-color: var(--darkBlue);
+    color: white;
+    padding: 10px;
+}
+td{
+    text-align: center;
+    padding: 30px;
+}
+.docButton{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--darkBlue);
+    color: white;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .tableSection{
+        width: 90%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .tableSection{
+        width: 90%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,42 @@
+.earlyOpportunityContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #6b39fd, #576ef2, #30d8d9);
+    position: relative;
+}
+#earlyParticles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#bradParticles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.earlyOpportunity{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    row-gap: 100px;
+    padding: 150px 0px;
+    align-items: center;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .earlyOpportunity{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .earlyOpportunity{
+        width: 90%;
+    }
+}

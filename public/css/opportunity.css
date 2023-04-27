@@ -1,0 +1,90 @@
+.opportunityContainer{
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+    background: linear-gradient(to right, #6b39fd, #576ef2, #30d8d9);
+ }
+.opportunity{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    row-gap: 100px;
+    padding: 100px 0px;
+    align-items: center;
+    position: relative;
+}
+.opportunityImageText{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 100px;
+}
+.titleOp{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.happyImage{
+    width: 600px;
+    height: 600px;
+    animation: moveUpDown 3s infinite alternate;
+}
+@keyframes moveUpDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50px); /* Adjust vertical distance as needed */
+    }
+}
+.opportunityList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 50px;
+}
+.opportunityItem{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.opportunityText{
+    font-size: 22px;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .opportunity{
+        width: 90%;
+    }
+    .opportunityImageText{
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    .happyImage{
+        width: 300px;
+        height: 400px;
+    }
+    .titleOp{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .opportunity{
+        width: 90%;
+    }
+    .opportunityImageText{
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    .happyImage{
+        width: 300px;
+        height: 400px;
+    }
+    .titleOp{
+        text-align: center;
+    }
+}

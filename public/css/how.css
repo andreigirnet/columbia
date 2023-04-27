@@ -1,0 +1,82 @@
+.howContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.how{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    row-gap: 100px;
+    padding: 100px 0;
+    align-items: center;
+}
+.steps{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    row-gap: 100px;
+}
+.stepItem{
+    display: flex;
+    column-gap: 100px;
+}
+.stepText{
+    color: var(--textDark);
+    font-size: 26px;
+    font-weight: 600;
+}
+.stepHeader{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+.step{
+    font-size: 26px;
+}
+.stepContent{
+    font-size: 20px;
+    opacity: 0.8;
+}
+.imageHow{
+    width: 300px;
+}
+.stepItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.stepFrame{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .how{
+        width: 90%;
+    }
+    .stepItem{
+        flex-direction: column;
+    }
+    .step{
+        font-size: 20px;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .how{
+        width: 90%;
+    }
+    .stepItem{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .step{
+        font-size: 20px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,27 @@
+.financieraLogos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.financiera{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0px;
+}
+.financiera img{
+    width: 250px;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+  .financiera{
+      flex-direction: column;
+      row-gap: 100px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .financiera{
+        flex-direction: column;
+        row-gap: 100px;
+    }
+}

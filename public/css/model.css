@@ -1,0 +1,44 @@
+.modelContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #6b39fd, #576ef2, #30d8d9);
+    position: relative;
+}
+#tsparticlesSquare{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.model{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    row-gap: 50px;
+    padding: 100px 0px;
+    align-items: center;
+}
+.modelList{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.modelItem{
+    color: white;
+    font-size: 28px;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .model{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .model{
+        width: 90%;
+    }
+}

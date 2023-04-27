@@ -1,0 +1,127 @@
+.navContainer{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*background: #cdfceb;*/
+    background: white;
+}
+.nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigationBar{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLink{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.navLink:hover{
+    opacity: 1;
+    color: var(--darkBlue);
+}
+.buttonNav{
+    width: 120px;
+    height: 40px;
+    border-radius: 7px;
+    background: var(--darkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.buttonNav:hover{
+    background: var(--lightBlue);
+}
+#responsiveNav{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: 0.8;
+    z-index: 5;
+}
+.responsiveNavItem{
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.responsiveNavItem a{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+#hamButton{
+    position: fixed;
+    z-index: 6;
+    margin: 10px 20px;
+    border: 3px solid white;
+    background: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    cursor: pointer;
+}
+#hamButton img{
+    width: 30px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    #navMenu{
+        display: flex;
+        justify-content: space-between;
+    }
+    #navMenu{
+        display: none;
+    }
+    #hamButton{
+        display: flex;
+    }
+    .navigationBar{
+        display: none;
+    }
+    .nav{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    #navMenu{
+        display: flex;
+        justify-content: space-between;
+    }
+    #navMenu{
+        display: none;
+    }
+    #hamButton{
+        display: flex;
+    }
+    .navigationBar{
+        display: none;
+    }
+    .nav{
+        justify-content: center;
+    }
+}

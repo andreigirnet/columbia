@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    --darkBlue: #6b39fd;
+    --mediumBlue: #576ef2;
+    --lightBlue: #30d8d9;
+    --green: #03c988;
+    --textDark: #2f4238;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.alert-success{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--green);
+    color: white;
+}
+.logo img{
+    width: 120px;
+}
+.mainBannerNav{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #6b39fd, #576ef2, #30d8d9);
+}
+.centered{
+    text-align: center;
+}
+.textTitleLight{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.textLight{
+    font-size: 22px;
+    color: white;
+    opacity: 0.9;
+}
+.textTitleDark{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--textDark);
+    text-align: center;
+}
+.textDark{
+    font-size: 22px;
+    color: var(--textDark);
+    opacity: 0.9;
+}
+.buttonLight{
+    background: var(--green);
+    width: 140px;
+    height: 40px;
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+.footerImg{
+    width: 100%;
+}
+
+.footerContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: var(--darkBlue);
+    margin-top: 200px;
+}
+.footer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    row-gap: 100px;
+    padding: 150px 0;
+    align-items: center;
+}
+.textFooter{
+    color: white;
+}
+#attention{
+    transition: transform 0.3s;
+}
+.buzz{
+    transition: transform 0.3s;
+}
+.buzzAnimation {
+    animation: buzzing 0.3s infinite;
+}
+@keyframes buzzing {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+    25% {
+        transform: translate(-2px, -2px) rotate(-2deg);
+    }
+    50% {
+        transform: translate(2px, 2px) rotate(2deg);
+    }
+    75% {
+        transform: translate(-2px, -2px) rotate(-2deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .textTitleDark{
+        font-size: 30px;
+    }
+    .textTitleLight{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .textTitleDark{
+        font-size: 30px;
+    }
+    .textTitleLight{
+        font-size: 30px;
+    }
+}
