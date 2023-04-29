@@ -48,10 +48,10 @@
                 <div class="navigationBar">
                     <a class="navLink" href="#">Home</a>
                     <a class="navLink" href="#">Company</a>
-                    <a class="navLink" href="#">Valuation</a>
-                    <a class="navLink" href="#">Documents</a>
+                    <a class="navLink" href="#valuation">Valuation</a>
+                    <a class="navLink" href="#table">Documents</a>
                     <a class="navLink" href="#faq">Faq's</a>
-                    <a class="navLink" href="#">Support</a>
+                    <a class="navLink" href="#contact">Support</a>
                     <a href="#contact"><div class="buttonNav">
                         Start Investing
                     </div></a>
@@ -67,6 +67,14 @@
         </div>
     </div>
     <div class="joinContainer">
+        <div class="cryptoImg">
+             <img src="{{asset('images/elements/cryptocoin.png')}}" class="cryptoCoin" alt="">
+            <img src="{{asset('images/elements/cryptocoin.png')}}" class="cryptoCoinDown" alt="">
+        </div>
+        <div class="cryptoImgRight">
+            <img src="{{asset('images/elements/cryptocoin.png')}}" class="cryptoCoin" alt="">
+            <img src="{{asset('images/elements/cryptocoin.png')}}" class="cryptoCoinDown" alt="">
+        </div>
         <div class="join">
             <div class="textTitleDark" data-aos="fade-up">Join the Future of Crypto Trading Today!</div>
             <div class="textDark" data-aos="fade-up">Invest in Sinfonia Global Exchange and be a part of the revolution. With our secure and transparent platform, you can trade cryptocurrencies with ease and confidence, all while enjoying the benefits of our full-reserve system.
@@ -90,7 +98,7 @@
             <div class="textTitleDark" data-aos="fade-up">PROBLEMS IN THE CRYPTO INDUSTRY…</div>
             <div class="textDark" data-aos="fade-up">We at Sinfonia Global Exchange are aware of the issues users have had with other centralized exchanges as well as the cryptocurrency industry. Investors may become frustrated and possibly suffer losses as a result of cryptocurrency exchanges' collapses related to numerous problems such as:</div>
             <div class="problemImageText">
-                <img src="{{asset('images/elements/frustrated.webp')}}" data-aos="fade-up" class="frustratedImg" alt="">
+                <img src="{{asset('images/elements/frustrated.png')}}" data-aos="fade-up" class="frustratedImg" alt="">
                 <div class="problemList">
                     <div class="problemItem" data-aos="fade-up">
                         <img src="{{asset('images/elements/arrow.png')}}" class="arrow" alt="">
@@ -160,10 +168,10 @@
         <div class="opportunity">
             <div class="titleOp">
                 <div class="textTitleLight" data-aos="fade-up">THE OPPORTUNITY…</div>
-                <div class="textLight">“The Future of Digital Finance is Cryptocurrency."</div>
+                <div class="textLight" data-aos="fade-up">“The Future of Digital Finance is Cryptocurrency."</div>
             </div>
             <div class="opportunityImageText">
-                    <img src="{{asset('images/elements/1.png')}}" data-aos="fade-up" id="floatImg" class="happyImage" alt="">
+                        <img src="{{asset('images/elements/1.png')}}" data-aos="fade-up" id="floatImg" class="happyImage" alt="">
                 <div class="opportunityList">
                     <div class="opportunityItem" data-aos="fade-up">
                         <div>⚪</div>
@@ -187,6 +195,14 @@
         </div>
     </div>
     <div class="marketContainer">
+        <div class="cryptoImg">
+            <img src="{{asset('images/elements/cryptocoin.png')}}" class="cryptoCoin" alt="">
+            <img src="{{asset('images/elements/cryptocoin.png')}}" class="cryptoCoinDown" alt="">
+        </div>
+        <div class="cryptoImgRight">
+            <img src="{{asset('images/elements/cryptocoin.png')}}" class="cryptoCoin" alt="">
+            <img src="{{asset('images/elements/cryptocoin.png')}}" class="cryptoCoinDown" alt="">
+        </div>
         <div class="market">
             <div class="textTitleDark" data-aos="fade-up">THE COLOMBIAN CRYPTO MARKET OPPORTUNITY</div>
             <div class="marketBoxes">
@@ -251,7 +267,7 @@
             <div class="textLight centered" data-aos="fade-up">To give the most value to our investors and our community, the Sinfonia Global Exchange seed round won’t incorporate inflated or any initial dilution metrics in the valuation equation. Here, we used a 1:1 ratio for our valuation which means for every peso you invest will cost the same as the Shares you buy $1.000COP: $1.000COP. That means, if we raised $20.000.000.000COP and if that Investor “A” invests $2.000.000.000.000COP, the company will be valued at $20.000.000.000COP, and the Investor “A” will own 10% of the company. </div>
         </div>
     </div>
-    <div class="oneContainer">
+    <div class="oneContainer" id="valuation">
         <div class="one">
             <div class="textTitleDark" data-aos="fade-up">WHY ARE WE USING A 1:1 VALUATION?</div>
             <div class="textDark" data-aos="fade-up">Reasons that the more we can raise today, the more likely we can compete in the industry with our competitors. </div>
@@ -281,7 +297,7 @@
             </div>
         </div>
     </div>
-    <div class="tableContainer">
+    <div class="tableContainer" id="table">
         <div class="tableSection">
             <div class="textTitleDark" data-aos="fade-up">HOW DOES THE WARRANT SYSTEM WORKS?</div>
             <div class="textDark" data-aos="fade-up">For example, if you invest $100.000.000COP before JULY 30th, you’d have the option to invest
@@ -334,6 +350,7 @@
         </div>
     </div>
     <div class="reasonsContainer">
+        <img src="{{asset('images/elements/background.png')}}" id="backImage" class="backImage" alt="">
         <div class="reasons">
             <div class="textTitleDark" data-aos="fade-up">REASONS TO INVEST</div>
             <div class="reason" data-aos="fade-up">
@@ -412,58 +429,59 @@
     <div class="faqsContainer" id="faq">
         <div class="faqs">
             <div class="textTitleDark">FAQs</div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-up">
                 <div class="smallerTitle">•	How much can I invest?</div>
                 <div class="textDark">-	A minimum subscription of $2.500.000 COP per investor is required. Although SINFONIA GLOBAL EXCHANGE S.A.S. reserves the right to accept subscriptions for a lesser amount. Please email our investor relations for a lesser amount. There are currently no limitations on the number of shares an investor can purchase.</div>
             </div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-up">
                 <div class="smallerTitle">•	When will I receive my shares?</div>
                 <div class="textDark">-	After you've invested, we will process your investment. It will take a few business days AFTER receiving a wire to send you a confirmation. Wires must be cleared before. Once cleared, we must process them - and we'll do our best to do so quickly. When the round closes, you'll receive an electronic stock certificate that proves the shares you own in Sinfonia Global Exchange S.A.S.</div>
             </div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-up">
                 <div class="smallerTitle">•	If I'm not based in Colombia, can I still invest?</div>
                 <div class="textDark">-	In the event that you wire money from abroad, your currency will be changed right away, and you will be granted the shares equal to the net Colombian Pesos received. To sum up, absolutely. With the exception of any potential restrictions on such investments imposed by your nation, we should be able to help you invest with us.</div>
             </div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-up">
                 <div class="smallerTitle">•	When will the Seed Round be closed?</div>
                 <div class="textDark">-	There won't be an endless window of time to invest. We won't be accepting an endless amount of investment. Only capital that we are confident we can use to generate returns in a fair amount of time will we accept. As a result, the fundraising time can finish quickly and without warning.</div>
             </div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-up">
                 <div class="smallerTitle">•	Will there be a chance to invest in the future?</div>
                 <div class="textDark">-	We are unsure. The next time you can invest might be in the event we have an Initial Public Offering.</div>
             </div>
         </div>
     </div>
-    <div class="contactContainer" id="contact">
+    <div class="contactContainer" id="contact" data-aos="fade-up">
         <div class="contact">
-            <div class="textTitleDark">Contact Us</div>
+            <div class="textTitleDark" data-aos="fade-up">Contact Us</div>
             <form action="{{route('sendEmail')}}" method="POST" class="form">
                 @csrf
-                <div class="formItem">
+                <div class="formItem" data-aos="fade-up">
                     <label for="fullName">Full Name:</label>
                     <input type="text" name="fullName" id="fullName" placeholder="Write your full name" required>
                 </div>
-                <div class="formItem">
+                <div class="formItem" data-aos="fade-up">
                     <label for="email">Email:</label>
                     <input type="text" name="email" id="email" placeholder="Write your email" required>
                 </div>
-                <div class="formItem">
+                <div class="formItem" data-aos="fade-up">
                     <label for="phone">Phone Number</label>
                     <input type="tel" name="phone" id="phone" placeholder="Write your phone number" required>
                 </div>
-                <button type="submit" class="formButton">Submit</button>
+                <button type="submit" class="formButton" data-aos="fade-up">Submit</button>
             </form>
         </div>
     </div>
     <div class="footerContainer">
+
         <div class="footer">
-            <img src="{{asset('images/elements/graf.webp')}}" class="footerImg" alt="">
             <div class="textFooter">This part is for my legal team to fill in – includes All Rights Reserved and Privacy Policy</div>
         </div>
     </div>
     <script src="{{asset('js/hamburgerAction.js')}}"></script>
     <script src="{{asset('js/particles.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
+    <script src="{{asset('js/scroll.js')}}"></script>
     <script src="{{asset('js/buzz.js')}}"></script>
     <script src="{{asset('js/success.js')}}"></script>
     <script src="{{asset('js/float.js')}}"></script>

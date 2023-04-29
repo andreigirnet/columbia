@@ -65,8 +65,12 @@ a{
     cursor: pointer;
     font-size: 20px;
 }
-.footerImg{
+#footerParticles{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
 .footerContainer{
@@ -74,8 +78,9 @@ a{
     height: auto;
     display: flex;
     justify-content: center;
-    background: var(--darkBlue);
+    background: linear-gradient(to right, #6b39fd, #576ef2, #30d8d9);
     margin-top: 200px;
+    position: relative;
 }
 .footer{
     width: 60%;
@@ -116,12 +121,64 @@ a{
         transform: translate(0, 0) rotate(0);
     }
 }
+
+.cryptoCoin{
+    width: 100px;
+    animation: moveUpDown 2s infinite alternate;
+}
+.cryptoImg{
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cryptoImgRight{
+    position: absolute;
+    top: 40%;
+    right: 50px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cryptoCoinDown{
+    width: 100px;
+    animation: moveDownUp 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50px); /* Adjust vertical distance as needed */
+    }
+}
+@keyframes moveDownUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-50px); /* Adjust vertical distance as needed */
+    }
+}
+
+
 @media screen and (max-width: 1200px) and (min-width: 768px){
     .textTitleDark{
         font-size: 30px;
     }
     .textTitleLight{
         font-size: 30px;
+    }
+    .cryptoImg{
+        display: none;
+    }
+    .cryptoImgRight{
+        display: none;
     }
 }
 @media screen and (max-width: 767px) and (min-width: 250px){
@@ -130,5 +187,11 @@ a{
     }
     .textTitleLight{
         font-size: 30px;
+    }
+    .cryptoImg{
+        display: none;
+    }
+    .cryptoImgRight{
+        display: none;
     }
 }

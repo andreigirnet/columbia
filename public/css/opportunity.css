@@ -32,14 +32,14 @@
     height: 600px;
     animation: moveUpDown 3s infinite alternate;
 }
-@keyframes moveUpDown {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(50px); /* Adjust vertical distance as needed */
-    }
-}
+/*@keyframes moveUpDown {*/
+/*    from {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    to {*/
+/*        transform: translateY(50px); !* Adjust vertical distance as needed *!*/
+/*    }*/
+/*}*/
 .opportunityList{
     display: flex;
     flex-direction: column;
