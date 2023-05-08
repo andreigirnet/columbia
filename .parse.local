@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "sinfonia"
+    },
+    "sinfonia": {
+      "applicationId": "h52cM6iok2z6u92qyC74mQI4ZzNGNdYLGzEgWK1Y"
+    }
+  }
+}
